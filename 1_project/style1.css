@@ -1,0 +1,39 @@
+body{
+    background-color: black;
+    color: white;
+    font-family: Arial;
+}
+p.title{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+button.move{
+    height: 120px;
+    width: 120px;
+    border-radius: 60px;
+    border: 2px solid white;
+    background-color: black;
+    margin-right: 10px;
+    cursor: pointer;
+}
+img{
+    height: 50px;
+    
+}
+p.result{
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 50px;
+}
+p.score{
+    margin-top: 60px;
+}
+button.reset,button.auto-button{
+    background-color: white;
+    border: none;
+    font-size: 15px;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: none;
+}

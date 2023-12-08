@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- First Part -->
+    <p class="_1line">YouTube Subscribe Button</p>
+    <button class="subscribe js-subscribe" onclick="
+    subscribe();">Subscribe</button>
+
+    <!-- Second Part -->
+    <p>Amazon Shipping Calculator</p>
+    <p>Orders under $40 = +$10 shipping.</p>
+    <p>Orders over $40 = FREE shipping. </p>
+
+    <input class="input js-input" placeholder="Cost of order" onkeydown="
+    key = event.key
+    if(key === 'Enter'){
+        calculate();
+    }">
+    <button class="calculate" onclick="
+    calculate();">Calculate</button>
+    <p class="js-write"></p>
+
+    <!-- third part -->
+    <p class="game">Rock Paper Scissors</p>
+    <a href="game.html">Click here</a>
+    <script>
+        function subscribe() {
+            const a = document.querySelector('.js-subscribe').innerText;
+            if (a === 'Subscribe') {
+                document.querySelector('.js-subscribe').innerHTML = 'Subscribed';
+                document.querySelector('.js-subscribe').classList.add('js-button');
+            }
+            else {
+                document.querySelector('.js-subscribe').innerHTML = 'Subscribe';
+                document.querySelector('.js-subscribe').classList.remove('js-button');
+            }
+        }
+        function calculate() {
+            let a = document.querySelector('.js-input').value;
+            a = Number(a);
+            if (a >= 1 && a < 40) {
+                a = a + 10;
+                document.querySelector('.js-write').innerHTML = a;
+            }
+            else {
+                document.querySelector('.js-write').innerHTML = a;
+            }
+        }
+    </script>
+</body>
+
+</html>

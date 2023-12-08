@@ -1,0 +1,33 @@
+body{
+    font-family: Arial;
+    padding-bottom: 100px;
+}
+p.p_2{
+    margin-top: 50px;
+}
+p.last{
+    margin-top: 50px;
+}
+.container{
+    display: grid;
+    grid-template-columns: 200px 150px 100px;
+    align-items: center;
+    column-gap: 10px;
+    margin-bottom: 10px;
+}
+.container .Todoname,.Add-button{
+    font-size: 15px;
+    padding: 6px;
+}
+.Add-button,.Delete{
+    background-color: green;
+    color: white;
+    border: none;
+    font-size: 15px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+.Delete{
+    background-color: darkred;
+    margin-bottom: 5px;
+}

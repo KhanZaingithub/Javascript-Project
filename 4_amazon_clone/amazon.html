@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Project</title>
+
+    <!-- css link -->
+    <link rel="stylesheet" href="style/pages/amazon.css">
+    <link rel="stylesheet" href="style/shared/amazon-header.css">
+    <link rel="stylesheet" href="style/shared/general.css">
+
+</head>
+
+<body>
+    <header class="js-amazon-header amazon-header">
+        <section class="left-side">
+            <a href="amazon.html" class="header-link">
+                <img src="images/amazon-logo-white.png" alt="" class="amazon-logo">
+                <img src="images/amazon-mobile-logo-white.png" alt="" class="amazon-mobile-logo"></a>
+        </section>
+        <section class="middle-section">
+            <input type="text" class="js-search-bar search-bar" placeholder="Search">
+            <button class="js-search-button search-button">
+                <img class="search-icon" src="images/icons/search-icon.png">
+            </button>
+        </section>
+        <section class="right-section">
+            <a href="orders.html" class="order-link header-link">
+                <span class="return-text">Returns</span>
+                <span class="orders-text">& Orders</span>
+            </a>
+            <a href="checkout.html" class="cart-link header-link">
+                <img src="images/icons/cart-icon.png" alt="" class="cart-icon">
+                <div class="js-cart-quantity cart-quantity"> 0
+                </div>
+                <div class="cart-text">cart</div>
+            </a>
+        </section>
+        <section class="right-section-mobile">
+            <img class="js-hamburger-menu-toggle hamburger-menu-toggle" src="images/icons/hamburger-menu.png">
+        </section>
+        <div class="js-hamburger-menu-dropdown hamburger-menu-dropdown">
+            <a class="hamburger-menu-link" href="orders.html">
+                Returns &amp; Orders
+            </a>
+            <a class="hamburger-menu-link" href="checkout.html">
+                Cart (<span class="js-cart-quantity-mobile cart-quantity-mobile">10</span>)
+            </a>
+        </div>
+    </header>
+    <main>
+        <div class="js-products-grid products-grid">
+        </div>
+    </main>
+
+    <script src="data/cart.js"></script>
+    <script src="data/data.js"></script>
+    <script src="script/amazon.js"></script>
+</body>
+
+</html>

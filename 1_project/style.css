@@ -1,0 +1,41 @@
+body{
+    font-family: Arial;
+}
+p._1line,p{
+    font-family: Arial;
+}
+button.subscribe{
+    background-color: black;
+    color: white;
+    padding: 10px 15px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 50px;
+    border: none;
+    margin-bottom: 35px;
+}
+button.js-button{
+    background-color: white;
+    color: black;
+    padding: 10px 15px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 50px;
+    border: none;
+    margin-bottom: 35px;
+}
+input.input{
+    font-size: 15px;
+    padding: 10px;
+}
+button.calculate{
+ background-color: green;
+  color: white;
+  border: none;
+  padding: 12px 15px;
+  font-size: 15px;
+  cursor: pointer;
+}
+p.game{
+    margin-top: 55px;
+}
